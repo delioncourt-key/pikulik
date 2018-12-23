@@ -1,0 +1,44 @@
+
+
+ul.inline_block_nav{
+border-style: solid;
+border-width: 1px;
+border-color: red;
+background-color: pink; 
+width: 1000px;
+margin: auto;
+padding: 0px;
+text-align: center;
+display: inline-block; }
+
+
+.inline_block_nav li{
+border-style: solid;
+border-width: 1px;
+width: 100px; 
+height: inherit;
+margin: auto;
+padding: 10px 10px;
+display: inline-block;
+
+}
+.floated_nav{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;   
+    background-color: plum;
+    width: 1000px;
+}
+
+
+.floated_nav  li{
+    float: left;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aqua;
+    text-align: center;
+    padding: 0.5% 0;
+}
+
+

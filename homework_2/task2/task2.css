@@ -1,0 +1,9 @@
+* { 
+    box-sizing: border-box;  
+}
+p:nth-child(2){
+    font-size: 30px;
+}
+span + p{
+    color: #999999;
+}

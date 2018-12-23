@@ -1,0 +1,267 @@
+*{box-sizing: border-box;
+}
+body{
+    max-width: 100%;  
+    margin: 0 auto;
+}
+.link{
+color: #00aeef;
+text-decoration: none;
+}
+
+link:hover{
+    text-decoration: underline;
+}
+.link-decorated::after{
+    display: inline-block;
+    content: '>>';
+    margin-right: 5px;
+}
+
+.page-header{
+    background-color: #333333;
+   }
+   .page-header.container{
+       height: 135px;
+   }
+
+  .page-header{
+
+padding-top: 43px; 
+padding-bottom: 36px;
+padding-left: 70px;
+padding-right: 70px;
+
+ }
+ .page-header-logo{
+    display: inline-block;
+    font-size: 55px;
+    line-height: 1;
+    color: #eee;
+     
+ }
+ .page-header-menu{
+    list-style-type: none;
+   font-size: 16px;
+    line-height: 1;
+    float: right;
+    font-family: "Arial MT";
+    padding-bottom: 11px;
+    padding-top: 32px; 
+    margin: 0;
+ }
+
+ .page-header-menu-item{
+    display: inline-block;
+ }
+
+ .page-header-menu-item:not(:last-child)::after{
+    display: inline-block;
+     content:'--';
+     color: #eee;
+     margin: 0 15px;
+ }
+ 
+ .page-header-menu-link{
+    text-decoration: none;
+    color: #eee;
+ }
+
+.page-header-menu-link-active{
+      color: #00aeef;
+
+}
+
+section {
+    border-bottom: dashed #eee 2px;
+} 
+
+.page-main-content{
+    font-family: "Myriad Pro";
+   }
+section.heading{
+  padding: 67px 70px 31px 70px;
+   }
+.main-heading{
+    color: #333333;
+    font-size: 75px;
+    line-height: 1;
+    letter-spacing: -2.4px;
+    font-weight: 700;
+   
+}
+.main-heading-highlight{
+    color: #00bff3;
+}
+ 
+.secondary-heading{
+    color: #bbb;
+    font-size: 62px;
+    line-height: 1;
+    letter-spacing: -2px;
+
+}
+
+section.text-info{
+    padding: 34px 85px 34px 70px;
+    margin-right: 15px;
+}
+.text-info-title{
+font-size: 37px;
+line-height: 1;
+color:#555;
+letter-spacing: -1.40x;
+margin: 0 1%;
+}
+section.cards{
+    padding: 43px 67px 48px 67px;
+    display: inline-block;
+}
+.card {
+    padding: 25px;
+    float: left;
+    max-width: 30%;
+    background-color: #00aeef;
+    
+    
+}
+.card:not(:first-child){
+    margin-left: 5%;
+}
+
+.card-heading{
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #fff;
+    text-align: center;
+    font-size: 38px;
+    line-height: 1;
+    color: #fff;
+}
+.card-description{
+    text-align: center;
+    padding: 35px 0;
+    font-size: 14px; 
+    font-family: Arial;
+    width: 100%;
+    border: 0;
+    color: #eee;
+}
+
+.card-button{
+    border: 0;
+    width: 100%;
+    background-color: #0076a3;
+    
+    box-shadow: inset 0 0 5px rgba(35, 81, 98, 0.75);;
+}
+.card-button-link{
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+section.two-columns{
+    height: 450px;
+    padding: 36px 71px 40px 70px; 
+    }
+
+
+.two-columns-item{
+    float: left;
+    max-width: 50%;
+}
+
+.two-columns-item:not(:last-child){
+    border-right: 2px dashed #cccccc;
+}
+.two-columns-item:not(:first-child){
+    padding-left: 30px;
+}
+.two-columns-item-content{
+    font-family: Arial;
+}
+.testimonial{
+position: relative;
+}
+
+.testimonial ~ .testimonial {
+    padding-top: 35px;
+}
+.two-columns-item-heading{
+    color: #555555;;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.96px;
+    padding-bottom: 25px;
+}
+.testimonial-avatar{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #cccccc;
+   
+}
+.testimonial-wrapper{
+    padding-left: 106px;
+    padding-right: 50px;
+    max-width: 100%;
+}
+.testimonial-comment{
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #555555;
+    font-family: "Arial MT";
+    color: #555555;
+}
+.testimonial-author{
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bolder;
+    
+}
+.testimonial-link{
+    font-size: 14px;
+}
+.project-title{
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 1
+}
+.project-img{
+
+max-width: 100%;
+}
+.project-title{
+color: #888888;
+font-family: "Arial MT";
+font-size: 20px;
+line-height: 1;
+}
+.project-description{
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.project-link{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+}
+.page-footer-text{
+    color: #888;
+    padding: 20px 65px;
+    font-size: 16px;
+    line-height: 1;
+
+}
+.page-footer-text-item:not(:first-child)::before{
+content: ' ~ ';
+display: inline-block;
+color: #888;
+margin: 0 1px;
+
+}

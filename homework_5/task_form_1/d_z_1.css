@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding-top: 5%;
+    
+
+    
+}
+.wipper{
+    margin: 0 auto;  
+    max-width: 50%;
+    border: solid 1px #fcf8f8;
+    background-color:#505050;
+    padding: 3% 6%;
+}
+.all_form{
+    border: solid 2px white;
+    margin: 5%;
+    text-align: center;
+    width: 90%;
+    font-size: 13px;
+    padding: 5%;
+    
+}
+    
+.header{
+        padding: 10px 0 5px 10px;
+        border: 1px solid #4a4a4a;
+        background: #4a4a4a;
+        border-radius: 30px;
+        margin: 10px 40px 10px 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+}
+.text{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+input {
+    padding: 3% 20% 3% 20%;
+    border: 1px solid #4a4a4a;
+    background: #4a4a4a;
+    border-radius: 30px;
+    margin: 10px 40px 10px 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+  }
+  
+   svg{
+       height: 36px;
+      width: 36px;
+      background-color: blue;
+      color: white;
+      border-radius: 30px;
+      padding: 5px;
+      position: absolute;
+      transform: translate(-156px,-62px);
+     }
+.but{
+    border-radius: 30px;
+    padding: 3% 20% 3% 20%;
+    background:blue;
+    border: none;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/*.header  {
+border: solid 1px #4a4a4a;
+margin: 3% 5%;
+background-color: #4a4a4a;
+border-radius: 5%;
+}
+p{
+border: solid 1px #4a4a4a;
+margin: 3% 5%;
+background-color: #4a4a4a;
+border-radius: 5%;
+}

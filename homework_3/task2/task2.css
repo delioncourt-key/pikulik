@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    
+    }
+.menu{
+    background-color: blueviolet;
+    font-family: 'Economica';
+     text-align: center;
+    
+ }
+ .wriper{
+     padding: 0%;
+ }
+ .pukts{
+    list-style-type: none;
+    margin: 0;
+    
+ }
+ a{
+    color: white;
+    text-decoration: none;
+    
+ }
+  .punkts-menu{
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right:10px;
+     text-align: center;
+     padding-bottom: 1%;
+     padding-top: 1%; 
+  
+}
+
+.clearfix:after {
+    content: " "; 
+    display: block;  
+    clear: both;  
+ }
+
+ .punkts-menu:hover{
+    background-color: grey;
+    color: rgb(71, 70, 70);
+}
+
+.more {
+    float: right;
+    width: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    
+ }
+
+
+
+
+
+
+ 
+    
+    
+    /*font-size: 22px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right:10px;
+     text-align: center;
+     color: white;
+    */
+
+
+

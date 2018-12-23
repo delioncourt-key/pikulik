@@ -1,0 +1,52 @@
+.top_navigation{
+    background-color: #777;
+    list-style: none;
+    overflow:hidden;
+    margin: 0; padding: 0;
+   border: 1px solid blue;
+   text-align: center;
+}
+
+ li{
+    float: left;
+    width: 10%;
+    padding: 1%;
+    
+}
+li:first-child{
+    background-color: green;
+}
+
+a {color: white;
+  text-decoration: none;
+}
+
+.content{
+    border: 1px solid blue;
+    padding: 5px; 
+    margin: 0px; 
+    float: left;
+    width:75%;
+}
+.sidemenu{
+    border: 1px solid blue;
+    padding: 5px; 
+    margin: 0px; 
+    float: right;
+    width:25%;
+}
+.heading{
+    margin: 0px;
+    padding:5px;
+    background-color: #2196f3;
+    text-align: center;
+    color: white;
+    }
+
+
+.footer{
+    margin: 0px;
+    background-color:#444;
+    padding:5px;
+    color: white;
+}

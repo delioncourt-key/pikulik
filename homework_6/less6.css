@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    }
+
+    .wraiper{
+    border: solid 3px #c0bdbd;
+    margin: 0 auto;
+    background-color:#505050;
+    max-width: 50%;
+    padding:70px;
+}
+.all_form{
+    border: solid 2px white;
+    padding: 50px 60px;
+    color: white;
+    font-size: 20px;
+    margin: 5%;
+   }
+   .header{
+    padding: 10px 0 5px 10px;
+    border: 1px solid #4a4a4a;
+    background: #4a4a4a;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+    text-align: center;
+   }
+#name input{
+   width: 100%;
+}
+#email input{
+    width: 100%;
+ }
+
+ form input {
+  padding: 15px 0 5px 15px;
+  border: 1px solid #4a4a4a;
+  background: #4a4a4a;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+  font-size: 20px;
+  text-align: center;
+  }
+.Sex{
+    padding: 5%;
+    text-align: left;
+   
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: #fffefe;
+    
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin: 2%;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color:#4e4744;
+     box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ; 
+}
+
+input[type="radio"]:checked + label span{
+     background-color:rgb(24, 23, 23);
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+
+.Current1{
+    padding: 5% 0;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label {
+    color: #fffefe;
+    
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin: 2%;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="checkbox"] + label span {
+     background-color:#4e4744;
+     box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ; 
+}
+
+input[type="checkbox"]:checked + label span{
+     background-color:rgb(24, 23, 23);
+}
+
+input[type="checkbox"] + label span,
+input[type="checkbox"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+ 
+select{ 
+    width: 100%;
+background-color: #4a4a4a;
+color: #ffffff; 
+box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ; 
+} 
+input.file{
+    background-color:#4e4744;
+}
+
+.file-upload {
+    position: relative; 
+    overflow: hidden;
+    background: #4a4a4a;
+    padding: 20px 10px;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ; 
+    text-align: center;
+}
+.file-upload:hover {
+    background: #202020;
+}
+.file-upload input[type="file"]{
+   display: none;
+}
+.file-upload label {
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.file-upload span {
+    line-height: 36px; 
+}
+#comment{
+width: 100%;
+padding: 15px 0 5px 15px;
+  border: 1px solid #4a4a4a;
+  background: #4a4a4a;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+}
+.but{
+    background:blue;
+    border: none;
+    padding: 5% 45% ;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 100%;
+   
+}
+ .butn{
+text-align: center;
+ }
+ svg{
+    height: 40px;
+   width: 40px;
+   background-color: blue;
+   color: white;
+   border-radius: 30px;
+   padding: 5px;
+   position: absolute;
+   transform: translate(4px, -62px);
+   box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+  }
+  .fa-w-14{
+    transform: translate(4px, -42px); 
+  }

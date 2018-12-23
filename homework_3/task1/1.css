@@ -1,0 +1,38 @@
+*{box-sizing: border-box;
+}
+body {
+    margin: 0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    
+    }
+  .menu{
+    background-color: blueviolet;
+    font-family: 'Economica';
+    text-align: center;
+    list-style-type: none;
+  }
+  .pukts{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .punkts-menu{
+      display: inline-block;
+      font-size: 22px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 2%; 
+  }
+  .punkts-menu:hover{
+      background-color: grey;
+      color: rgb(71, 70, 70);
+  }
+
+
+
+  

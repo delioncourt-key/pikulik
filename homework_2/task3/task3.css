@@ -1,0 +1,33 @@
+* { 
+    box-sizing: border-box;  
+}
+
+a[href="http://ya.ru"]{
+    color: #ff7700;
+}
+a[href="https://mail.ya.ru"]{
+    color: #ff7700;
+   }
+   a[href="http://maps.yandex.ru"]{
+    color: #ff7700;
+ }
+ a[href="http://maps.yandex.ru"]::after{content: "\21f1";
+   
+ }
+
+:after{
+    position: fixed;
+     transform: rotate(0.25turn);
+      }
+a[href="http://google.com"]{
+    color: #556666;
+}
+a[href="http://maps.google.com"]{
+    color: #556666;
+    }
+a[href="http://maps.google.com"]::after{content: "\21f1";
+}
+
+a[href="http://news.google.com"]{
+    color: #556666;
+}
