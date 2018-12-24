@@ -2,72 +2,80 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0 ;
-    padding-top: 5%;
-   
+    margin: 0;
 }
 .wipper{
-    margin: 20px;  
-    max-width: 50%;
+    margin: 0 auto;
+    max-width: 500px;
     border: solid 1px #fcf8f8;
     background-color:#505050;
     padding: 50px;
 }
 .all_form{
     border: solid 2px white;
-    
     text-align: center;
-    font-size: 13px;
+    font-size: 13px;   
 }
 form{
     padding: 20px 30px;
-
-} 
+}
 .header{
-        padding: 10px 0 5px 10px;
-        border: 1px solid #4a4a4a;
-        background: #4a4a4a;
-        border-radius: 30px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+    padding: 10px 5px;
+    border: 1px solid #4a4a4a;
+    background: #4a4a4a;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
 }
 .text{
-    padding: 5px;
+    margin: 0;
     color: white;
     font-size: 20px;
     line-height: 1;
-    
 }
-.inp{
-    margin: 0;
-    margin-top: 20px;
-    padding: 20px 10px  20px 10px;
+.entry_field{
+    
+    max-width: 100%;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    line-height: 50px;
+    border: 0;
     background: #4a4a4a;
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+    margin-top: 20px;
+    position: relative;
+    text-align: left;
+}
+svg{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    padding: 2%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 input{
+    max-width: 100%;
+    color: #fff;
+    width: 100%;
+    padding-left: 60px;
+    line-height: 50px;
+    border:0;
     background: #4a4a4a;
-   
-}
-  
-   svg{
-     height: 50px;
-      width: 50px;
-      background-color: blue;
-      color: white;
-      border-radius: 30px;
-      padding: 5px;
-      position: absolute;
-      transform: translate(-290px,-15px);
-     }
-.but{
     border-radius: 30px;
-    padding: 3% 20% 3% 20%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset ;
+}
+.Click{
+    border-radius: 30px;  
     background:blue;
     border: none;
-    color: white;
+    color: white; 
     font-size: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-top: 20px;
+    padding: 3% 20% 3% 20%;
 }
-
