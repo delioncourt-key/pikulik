@@ -265,4 +265,40 @@ color: #888;
 margin: 0 1px;
 
 }
-@media 
+@media screen and (max-width: 980px)
+{
+    body
+    {font-size: 80%;}
+    .page-header-menu{
+    display: block;
+    margin: 0;
+    padding: 0;
+    }
+    .page-header-logo{
+        text-align: right;
+        font-size: 15px;
+    }
+    .page-header-logo:after{
+        display: block;
+        content: ' ';
+        clear: both;
+        float: none;
+    }
+    .page-header-menu.page-header-menu-item {
+        display: none;
+        position: absolute;
+        width: 120px;
+        top: 37px;
+        left: 0;
+    }
+    .card{
+        display: block;
+        max-width: 80%;
+        margin: 5%;
+        padding: 5%;
+        font-size: 20px;
+        
+        
+        
+    }
+}
