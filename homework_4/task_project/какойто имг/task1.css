@@ -1,12 +1,12 @@
 *{box-sizing: border-box;
 }
-body{ margin: 0 auto;
-padding: 0;
+body{ 
+    margin: 0;
 }
 .container{
-max-width: 990px;
-padding: 0 70px;
-margin: 0;
+max-width: 960px;
+margin: 0 auto;
+
 }
 .clearfix::after {
     content: "";
@@ -100,9 +100,9 @@ section {
     color: #bbb;
     font-size: 45px;
     line-height: 1;
-    letter-spacing: -2px;
+    letter-spacing: -1.2px;
     margin-top: 5px;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
 }
 
 section.text-info{
@@ -111,10 +111,10 @@ section.text-info{
    
 }
 .text-info-title{
-font-size: 31px;
+font-size: 35px;
 line-height: 1;
 color:#555;
-letter-spacing: -1.36px;
+letter-spacing: -1.5px;
 margin: 0 1%;
 }
 
@@ -162,7 +162,8 @@ section.cards{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-  
+    line-height: 5px;
+    padding: 15px 30px;;
 }
 
 
@@ -195,7 +196,7 @@ position: relative;
     font-size: 24px;
     line-height: 1;
     letter-spacing: -0.96px;
-    padding-bottom: 25px;
+    padding: 25px 0;
 }
 .testimonial-avatar{
     position: absolute;
