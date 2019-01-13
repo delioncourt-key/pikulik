@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.logo {
+    width: 50px;
+    height: 40px; 
+}
+
+.page-header {
+    background-color: #fff;
+
+    &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    &__logo{
+        margin: 23px 0;
+    }
+    
+}
+
+.nav-menu{
+    $self: &;
+
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__item{
+        display: inline-flex;
+        &:hover {
+            #{$self}__link {
+                color: #fff;
+                background-color: $main-color;
+            }
+        }
+    }
+&__link{
+    font-size: 14px;   
+    line-height: 1;
+    padding: 12px 25px;
+    text-transform: $t-trasform;
+    font-family: $lato-p;
+    color: $nav-menu-color;
+    border-radius: 3px;
+    text-decoration: none; 
+}
+}

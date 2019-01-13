@@ -1,0 +1,30 @@
+@import './variables.scss';
+.section-heading {
+    line-height: 1;
+    text-align: center;
+    color: $color-heading;
+    
+    &_light {
+       color: white;
+       text-align: center; 
+    }
+    &_align {
+        &_left{
+            text-align: left;
+        }
+    }
+  
+    &__main {
+      font-family: $Gotam;
+      font-size: 35px;
+      margin-bottom: 2px;
+      letter-spacing: -0.80px;
+      text-transform: $t-trasform; 
+      }
+
+
+    &__secondary {
+        font-family: $open-sans;
+        font-size: 16px;
+    }
+} 

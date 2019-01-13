@@ -1,12 +1,20 @@
+$Gotam: 'GothamPro-Black'; 
+$lato-b:'Lato-Bold';
+$lato-p:'Lato-Regular';
+$open-sans:'OpenSans-Regular';
+$color-heading: #394b50;
+$t-trasform: uppercase;
+$main-color: rgb(255, 187, 66);
+ $nav-menu-color: #585656;
+$text-decoration: none;
 
- $text-trasform: uppercase;
- $text-decoration: none;
- $list-style: none;
- $background-color-orange: rgb(255, 187, 66);
- $color-white: rgb(255, 255, 255);
- $color-text-basik: rgb(134, 134, 134);
- $color-text-basik-dark: #394b50;  
- 
+
+ @function get_vw_size($size) {
+   $screen: 1311; 
+
+  @return ($size /$screen) *100vw;
+ }
+   
 
 
 
