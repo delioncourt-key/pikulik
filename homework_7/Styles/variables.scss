@@ -1,0 +1,84 @@
+$Gotam: 'GothamPro-Black'; 
+$lato-b:'Lato-Bold';
+$lato-p:'Lato-Regular';
+$open-sans:'OpenSans-Regular';
+$color-heading: #394b50;
+$t-trasform: uppercase;
+$main-color: rgb(255, 187, 66);
+ $nav-menu-color: #585656;
+$text-decoration: none;
+
+
+ @function get_vw_size($size) {
+   $screen: 1311; 
+
+  @return ($size /$screen) *100vw;
+ }
+   
+
+
+
+
+
+ @mixin header-text {
+    font: {
+    family: "Gotham -Black";
+    size: 40px;
+    weight: bold;
+    line-height: 1;
+  }
+    text-align: center;
+    letter-spacing: -0.88px;
+    }
+
+
+   @mixin secondary-text{
+    font: {
+        family: "Open Sans Light";
+        size: 16px;
+        line-height: 1;
+      } 
+      text-align: center;
+   }
+   @mixin input{
+    line-height: 35px; 
+    padding-left: 50px;
+    max-width: 100%;
+    border:0;
+    text-align: left;
+   }
+   
+   @mixin link-button{
+     padding: 0 43px;
+     line-height: 35px; 
+
+ }
+ @mixin button{
+   border: none; 
+   background-color: #ffbb42;
+   text-transform: uppercase;
+   
+ }
+  @mixin white-cards{
+   padding: 50px 31px;
+   background-color: #ffffff;
+   border: 1px solid #ccd5df;
+   margin-top: 79px;
+   color: #818b95;
+   flex-grow: 1;
+   margin-bottom: 20px;
+  }
+  @mixin header-mini{
+   color: $color-text-basik-dark;
+   font-size: 16px;
+   line-height: 1;
+   text-transform: $text-trasform;
+   font-weight: 700; 
+  }
+  @mixin header-mini-text {
+   color: $color-text-basik;
+   font-family: "Open Sans";
+   font-size: 13px;
+   line-height: 1.5;
+  }
+  
