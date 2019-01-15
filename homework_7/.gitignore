@@ -1,3 +1,3 @@
-  $ git status
-./node_modules
-./package-lock.json
+ $ cat .gitignore
+node_modules/
+package-lock.json 
