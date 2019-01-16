@@ -1,1 +1,15 @@
 @import './variables.scss';
+
+.button-decorated{
+    background-color: $main-color;
+    border: none;
+    border-radius: 3px;
+    
+    &__link{
+        padding: 0 53px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+       
+    }
+}

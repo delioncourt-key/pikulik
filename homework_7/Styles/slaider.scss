@@ -1,1 +1,12 @@
 @import './variables.scss';
+
+.main-screen {
+    position: absolute;
+    text-align: center;
+
+    &__screen {
+        position: absolute;
+        bottom: 20%;
+        
+    }
+}
