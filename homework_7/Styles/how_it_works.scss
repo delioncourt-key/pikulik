@@ -1,1 +1,55 @@
 @import './variables.scss';
+
+.content-seven-steps {
+padding-top: get_vw_size(155);
+padding-bottom: get_vw_size(150);
+text-align: center; 
+
+}
+.seven-colons-wrapper{
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+   }
+
+.seven-colons {
+    padding-top: 78px;
+    position: relative;
+    
+    &__icon-colon {
+       margin-top:25px; 
+       padding-bottom: 102px;
+    }
+
+    &__header-colon {
+        text-transform: $t-trasform;
+        font-size: 15px;
+        font-family: $lato-b;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    &__text-colon {
+        line-height: 1.5;
+        color: #7b7b7b;
+        padding-bottom: 91px;
+    }
+
+}
+   
+ .arrow-bottom {
+        top:100px;
+        position: relative;
+     }   
+      
+ .arrow-top{
+        position: relative;
+        bottom: 30px;
+ }
+
+ .button-seven-steps{
+     padding-top: 17px;
+     padding-bottom: 19px;
+ }
+     
+        

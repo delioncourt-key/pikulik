@@ -1,12 +1,16 @@
 @import './variables.scss';
 
-.main-screen {
+.slider{
+   
+}
+.image-wrapper {
     position: absolute;
-    text-align: center;
+    left: 25%;
+    bottom: -15%;
+    display: flex;
+    justify-content: center;
 
-    &__screen {
-        position: absolute;
-        bottom: 20%;
-        
-    }
+}
+.image-wrapper__laptop-people-image{
+   
 }

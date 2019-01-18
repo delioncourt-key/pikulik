@@ -9,6 +9,7 @@ $main-color: rgb(255, 187, 66);
 $text-decoration: none;
 $icon-color: #6e6e6e;
 $white: #ffffff;
+$color-paragraf: #7b7b7b;
 
 
  @function get_vw_size($size) {
@@ -17,37 +18,9 @@ $white: #ffffff;
   @return ($size /$screen) *100vw;
  }
    
-
-
-
-
-
- @mixin header-text {
-    font: {
-    family: "Gotham -Black";
-    size: 40px;
-    weight: bold;
-    line-height: 1;
-  }
-    text-align: center;
-    letter-spacing: -0.88px;
-    }
-
-
-   @mixin secondary-text{
-    font: {
-        family: "Open Sans Light";
-        size: 16px;
-        line-height: 1;
-      } 
-      text-align: center;
-   }
- 
-   
- 
-  @mixin white-cards{
+@mixin white-cards{
    padding: 50px 31px;
-   background-color: #ffffff;
+   background-color: $white;
    border: 1px solid #ccd5df;
    margin-top: 79px;
    color: #818b95;
@@ -55,4 +28,10 @@ $white: #ffffff;
    margin-bottom: 20px;
   }
  
-  
+  @mixin blue-card{
+  padding: 87px 32px 95px 32px; 
+  background-color:#709dca; 
+  color: #ffffff; 
+  margin-top: 50px; 
+  flex-grow: 1; 
+  }

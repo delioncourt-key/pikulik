@@ -1,1 +1,47 @@
-@import './variables.scss';
+@import './variables.scss'; 
+
+.about-us {
+    display: flex;
+    justify-content: center;
+
+    &__right {
+        max-width: 50%;
+        background-color: $main-color;
+        
+    }
+   
+    &__image {
+        max-width: 50%;
+    }
+} 
+
+.section-heading_light {
+    padding-top: get_vw_size(164);
+    padding-bottom: get_vw_size(193);
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    
+    }
+
+
+.about-us-paragraf {
+    text-align: left;
+    &__about-head {
+       padding-bottom: 28px;
+    }
+    
+    &__about-text {
+        line-height: 1.5;
+    }
+}
+.link-decorated {
+   padding-top: 17px;
+   padding-bottom: 18px;
+}
+
+.button-about-us{
+padding-top: 17px;
+padding-bottom: 18px;
+border: 1px solid #e7ad48;
+}

@@ -1,1 +1,90 @@
 @import './variables.scss';
+
+.content-cards{
+    padding-top: get_vw_size(137);
+    padding-bottom: get_vw_size(164);
+    background-color: #e7edf3;
+}
+
+
+.card-wrapper {
+    display: flex; 
+    justify-content:center; 
+    text-align: center; 
+    text-transform: $t-trasform; 
+    padding-bottom: 20px; 
+    flex-wrap: wrap;
+    
+}
+
+.card_white {
+    @include white-cards; 
+    position: relative;
+    }
+
+.card_blue {
+@include blue-card;
+position: relative;
+
+} 
+
+ .card-header {
+    font-family:$lato-b;
+    font-size: 20px; 
+    line-height: 1; 
+    font-weight: normal; 
+ } 
+
+.card-text {
+    padding-top: 30px; 
+
+    &__dollar {
+        font-family:$lato-b; 
+        font-size: 25px; 
+        line-height: 1; 
+        position: relative; 
+        right: 30px; 
+    }
+
+    &__price {
+        font-family:$lato-p; 
+        font-size: 40px; 
+        font-weight: bolder; 
+        line-height: 1; 
+        font-variant: small-caps; 
+        position: relative; 
+        bottom: 25px;
+    }
+
+    &__period{
+        font-family:$lato-p; 
+            font-size: 13px; 
+            line-height: 1; 
+            font-weight: normal; 
+            position: relative; 
+            bottom: 27px; 
+    }
+}
+
+  .card-wrapper-list {
+    list-style: none; 
+
+    &__price_white {
+        border-top: #e2e9f0 solid 1px; 
+                padding: 16px 30px 16px 0;
+    }
+
+    &__price_blue {
+        border-top: #8eb8e2 solid 1px; 
+        padding: 16px 30px 16px 0;    
+    }
+}
+
+.button-card {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.orange {
+color: $main-color;
+}

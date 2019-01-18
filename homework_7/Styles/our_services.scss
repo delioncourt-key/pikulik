@@ -1,1 +1,50 @@
 @import './variables.scss';
+
+.content-our-services{
+    padding-top: get_vw_size(203);
+    padding-bottom: get_vw_size(155);
+}
+
+.section-two-colons {
+    display: flex;
+    margin-top: 93px;
+    }
+
+    .section-two-colons-left {
+        padding-right: 54px;
+    }
+
+    .section-two-colons-right {
+        padding-left: 54px;
+    }
+
+    .paragraph {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+        &__icon {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: 50px;
+        }
+
+        &__header {
+            color: $color-heading;
+            text-transform: uppercase;
+            padding-bottom: 21px;
+            padding-left: 87px;
+            font-weight: bold;
+            font-family: $lato-p;
+        }
+        &__text {
+            color: $color-paragraf;
+            line-height: 1.5;
+            padding-left: 87px;
+        }
+
+    }
+    .font-icon{
+        font-size: 50px;
+       color: rgb(22, 91, 151);
+    }
