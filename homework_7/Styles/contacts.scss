@@ -1,1 +1,40 @@
 @import './variables.scss';
+
+.contact {
+   padding-bottom: 53px;
+
+}
+
+.telephone {
+    display: flex;
+    justify-content: center;
+    color: #394b50;
+    font-size: 17px;
+    line-height: 1;
+
+    &__number{
+     padding-left: 10px;
+     font-weight: bold;
+     
+    }
+}
+
+
+.social-resources {
+    $self: &;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    color: #709dca;
+    
+    &__label:not(last-child) {
+       margin-right: 17px;
+      
+    }
+
+    &:hover {
+        #{$self}__site{
+            color:$main-color;
+        }
+    }
+}
