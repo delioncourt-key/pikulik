@@ -14,8 +14,26 @@
     text-transform: $t-trasform; 
     padding-bottom: 20px; 
     flex-wrap: wrap;
+
+    @include scale(1040){
+        flex-direction: column;
+        align-items: center;
     
 }
+    
+}
+
+
+.card {
+    @include scale(1040){
+    &__item {
+        & + & {
+          margin-top: 20px;
+        }
+     }
+  }
+}
+
 
 .card_white {
     @include white-cards; 

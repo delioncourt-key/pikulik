@@ -51,40 +51,49 @@
                                         <div class="section-heading__main">Boost up your local bussines</div> 
                                         <div class="section-heading__secondary">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum typesetting</div> 
                                 </div>
-                                <form class="section-input-wrapper_blue container">
-                                        <div class="section-input">
-                                                <div class="section-input__icon"><span class="fas fa-user"></span></div>
-                                                <input name="login" class="section-input__input input-log" placeholder="Full Name">
+                                <form class="section-input-wrapper section-input-wrapper_blue container">
+                                        <div class="section-input-wrapper__roll roll" >
+                                                <div class="roll__section-input section-input">
+                                                        <div class="section-input__icon"><span class="fas fa-user"></span></div>
+                                                        <input name="login" class="section-input__input input-log" placeholder="Full Name">
+                                                </div> 
+                                                <div class="roll__section-input section-input" >
+                                                        <div class="section-input__icon"><span class="fas fa-envelope"></span></div>
+                                                        <input type="email" class="section-input__input  input-email" placeholder="Email Address">
+                                                </div> 
                                         </div> 
-                                        <div class="section-input">
-                                                <div class="section-input__icon"><span class="fas fa-envelope"></span></div>
-                                                <input type="email" class="section-input__input  input-email" placeholder="Email Address">
-                                        </div> 
-                                        <div class="section-input">
-                                                <div class="section-input__icon"><span class="fas fa-phone"></span></div>
-                                                <input name="tel" class="section-input__input input-name" placeholder="Phone Number">
-                                        </div>   
-                                        <button class="button-decorated">
-                                                <a href="#" class="button-decorated__link link-decorated">Request a Quote</a>
-                                        </button>
-                                </form>
+                                        <div class="section-input-wrapper__roll roll" >
+                                                <div class="roll__section-input section-input">
+                                                        <div class="section-input__icon"><span class="fas fa-phone"></span></div>
+                                                        <input name="tel" class="section-input__input input-name" placeholder="Phone Number">
+                                                </div>   
+                                                <div class="roll__section-input section-input">
+                                                        <input type="submit" class="section-input__input input-button" value="Request a Quote">
+                                                </div>
+                                        </div>  
+                               
+                                </form> 
                         </div> 
                         <div class="main-screen  container">
-                                <div class="carousel">
-                                                <ul class="carousel__images">
-                                                                <li class="carousel__image-arrow-left"><img class="slider__image" src="./img/.png" alt="slide_img"></li>
-                                                                <li class="carousel__image-laptop"><img class="laptop" src="./img/Vector_Smart_Object.png" alt="большой кампуктер"> </li>    
-                                                                <li class="carousel__image-people"><img class="laptop_people" src="./img/Layer_24.png" alt="большой кампуктер"> </li> 
-                                                                <li class="carousel__image-arrow-right"><img class="slider__image" src="./img/_copy.png" alt="slide_img"></li>
-                                                
-                                                        </ul >
-                                                <div class="carousel__radio-wrapper">
-                                                       <p class="radio"></p>
-                                                       <p class="radio"></p>
-                                                       <p class="radio"></p>
+                                <div class="main-screen__slider">
+                                        <div class="slider">
+                                                <div class="slider__screen">
+                                                        <img src="./img/Layer_24.png" class="slider__image" alt="slide 1 image">
+                                                        <a href="#" class="slider__direction slider__direction_left">
+                                                                <span class="fas fa-angle-left slider__direction-icon icon"></span>
+                                                        </a>
+                                                        <a href="#" class="slider__direction slider__direction_right">
+                                                                <span class=" fas fa-angle-right slider__direction-icon icon"></span>
+                                                        </a>
                                                 </div>
-                                                
-                                        </div >  
+                                                <div class="slider__controls">
+                                                        <div class="slider__control slider__control_active"></div>
+                                                        <div class="slider__control"></div>
+                                                        <div class="slider__control"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div> 
                 </section>
                 <section class="content-our-services ">
                         <div class="section-heading container ">
@@ -142,7 +151,7 @@
 
                 </section>
                 <section class="about-us">
-                        <img class="about-us__image" src="./img/bigimg.png" alt="big_image">       
+                        <div class="about-us__image"></div>   
                         <div class="about-us__right">
                                 <div class="section-heading_light about-us-paragraf">
                                         <div class="section-heading__main about-us-paragraf__about-head">ABout us</div> 
@@ -159,14 +168,14 @@
                                 <div class="section-heading__secondary">Lorem Ipsum is simply dummy text of the printing typesetting.</div>
                         </div>
                         <div class="card-wrapper container">
-                                <div class="card_white">
+                                <div class=" card card_white">
                                         <div class="card-header">Basic plan</div>
                                         <div class="card-text"> 
                                                 <span class="card-text__dollar orange"> $ </span>
                                                 <div class="card-text__price orange">22</div>
                                                 <div class="card-text__period"> Per Month </div>
                                         </div>
-                                        <ul class="card-wrapper-list"> 
+                                        <ul class=" card card-wrapper-list"> 
                                                 <li class="card-wrapper-list__price_white">1 Account</li>
                                                 <li class="card-wrapper-list__price_white">8 hour support</li>
                                                 <li class="card-wrapper-list__price_white">Custom Cloud Services</li>
@@ -175,7 +184,7 @@
                                                 <a href="#" class="button-decorated__link link-decorated">Request a Quote</a>
                                         </button>
                                  </div>
-                                 <div class="card_blue">
+                                 <div class=" card card_blue">
                                                 <div class="card-header">Premium plan</div>
                                                 <div class="card-text"> 
                                                         <span class="card-text__dollar"> $ </span>
@@ -318,20 +327,24 @@
                                 <div class="section-heading__main">news letter</div> 
                                 <div class="section-heading__secondary">Lorem Ipsum is simply dummy Business industry</div>
                         </div>
-                        <form class="section-input-wrapper container">
-                                <div class="section-input">
-                                        <div class="section-input__icon"><span class="fas fa-user"></span></div>
-                                        <input name="login" class="section-input__input input-log" placeholder="Full Name">
-                                </div> 
-                                <div class="section-input">
-                                        <div class="section-input__icon"><span class="fas fa-envelope"></span></div>
-                                        <input type="email" class="section-input__input  input-email" placeholder="Email Address">
-                                </div> 
-
-                                <button class="button-decorated">
-                                        <a href="#" class="button-decorated__link link-decorated">Subscribe now</a>
-                                </button>
-                        </form>
+                        <form class="section-input-wrapper section-input-wrapper_blue container">
+                                        <div class="section-input-wrapper__roll roll" >
+                                                <div class="roll__section-input section-input">
+                                                        <div class="section-input__icon"><span class="fas fa-user"></span></div>
+                                                        <input name="login" class="section-input__input input-log" placeholder="Full Name">
+                                                </div> 
+                                                <div class="roll__section-input section-input" >
+                                                        <div class="section-input__icon"><span class="fas fa-envelope"></span></div>
+                                                        <input type="email" class="section-input__input  input-email" placeholder="Email Address">
+                                                </div> 
+                                        </div> 
+                                        <div class="section-input-wrapper__roll roll" >
+                                                <div class="roll__section-input section-input">
+                                                        <input type="submit" class="section-input__input input-button" value="Request a Quote">
+                                                </div>
+                                        </div>  
+                               
+                                </form> 
                 </section>
                 <section class="location "> 
                          <div class="location__adress "><img class="adress-image" src="./img/table_circle.png" alt=""></div>
@@ -403,6 +416,4 @@
 
 
 
-
-  
 

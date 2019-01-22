@@ -35,3 +35,30 @@ $color-paragraf: #7b7b7b;
   margin-top: 50px; 
   flex-grow: 1; 
   }
+
+ 
+@mixin scale($width, $diff: 'less') {
+  $behaviour: max-width;
+  $screen-width: $width;
+
+  @if ($diff == 'less') {
+      $screen-width: $width - 1px;
+  }
+  @if ($diff == 'self-above') {
+      $behaviour: min-width;
+  }
+
+  @media screen and (#{$behaviour}: $screen-width) {
+      @content;
+  }
+}
+
+$input_icon_size: 41px;
+$input_line_height: 1;
+$input_font_size: 10px;
+$input_padding: 18px;
+
+
+$slider_arrows_x_space: 40;
+$slider_arrows_bottom: 190;
+

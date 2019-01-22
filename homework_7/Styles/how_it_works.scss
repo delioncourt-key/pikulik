@@ -6,19 +6,32 @@ padding-bottom: get_vw_size(150);
 text-align: center; 
 
 }
-.seven-colons-wrapper{
+.seven-colons-wrapper {
     display: flex; 
     justify-content: center; 
     text-align: center; 
+
+    @include scale(1000) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
    }
 
+
 .seven-colons {
-    padding-top: 78px;
+    padding-top: 79px;
     position: relative;
     
+     @include scale(1000) {
+        padding-top: 0; 
+     }
+    
+    
     &__icon-colon {
-       margin-top:25px; 
-       padding-bottom: 102px;
+       margin-top: get_vw_size(25); 
+       padding-bottom:  get_vw_size(102);
     }
 
     &__header-colon {
@@ -40,14 +53,23 @@ text-align: center;
  .arrow-bottom {
         top:100px;
         position: relative;
+
+        @include scale(1000) { 
+            display: none;
+        }
+
      }   
       
- .arrow-top{
+ .arrow-top {
         position: relative;
         bottom: 30px;
+
+        @include scale(1000) { 
+            display: none;
+        }
  }
 
- .button-seven-steps{
+ .button-seven-steps {
      padding-top: 17px;
      padding-bottom: 19px;
  }

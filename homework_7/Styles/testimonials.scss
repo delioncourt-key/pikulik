@@ -10,33 +10,60 @@
     display: flex;
     justify-content: space-between;
     padding-top: 58px;
+
+    
+    @include scale(1000) {
+        flex-direction: column;
+        
+     }
     
 }
 
 .testimonial-left {
     padding-right: 18px;
+
+    @include scale(1000) {
+        padding-left: 18px;  
+    }
     
 }
 
 .testimonial-right {
     padding-left: 18px;
+
+    @include scale(1000) {
+        padding-right: 18px;  
+    }
 }
 
-.testimonial{
+.testimonial {
     background-color: $white;
     margin-bottom: 20px;
     padding: 51px 41px;
     text-align: left;
     color: $color-paragraf;
+    position: relative;
+
+    @include scale(1000) {
+     flex-direction: column;
+     align-items: center;
+    }
+
+
 
     &__avatar {
         position: absolute;
+
+        @include scale(1000) {
+           position: static;
+           padding-left: get_vw_size(150);
+        }
        
     }
 
 }
 .testimonial-paragraph{
-    padding-left: 35%;
+    padding-left: get_vw_size(150);
 
     &__comment {
         font-size: 15px; 

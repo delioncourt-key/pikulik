@@ -8,18 +8,32 @@
 .section-two-colons {
     display: flex;
     margin-top: 93px;
+
+    @include scale(1145){
+        flex-direction: column;
+        align-items: center;
+
+    }
+
     }
 
     .section-two-colons-left {
         padding-right: 54px;
+
+        @include scale(1145){
+            padding-left:54px;
+        }
     }
 
     .section-two-colons-right {
         padding-left: 54px;
+
+        @include scale(1145){
+            padding-right:54px;
+        }
     }
 
     .paragraph {
-        
 
         padding-top: 40px;
         padding-bottom: 40px;

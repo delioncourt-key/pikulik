@@ -1,47 +1,71 @@
 @import './variables.scss';
 
-.content-boost-up {
+.content-boost-up{
     background-color: rgb(112, 157, 202); 
     padding-top: get_vw_size(110);
     padding-bottom: get_vw_size(347);
-    
-    
-}
-.section-input-wrapper_blue {
-    padding-top: 33px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.section-input {
-    position: relative;
-    &__icon {
-          position: absolute;
-          width: 13px;
-          height: 16px;
-          margin-left: 15px;
-          color: $icon-color;
-          top: 17px;
+.section-input-wrapper{
+     display: flex;
+     align-items: center;
+
+     @include scale(1145){
+         flex-direction: column;
+         align-items: center;
+     }
+
+     &__roll{
+        display: flex;
+        
+     }
+         
+}
+ .roll{
+    align-items: center;
+    
+
+    &__section-input{
+        display: flex;
+        position: relative;
+        width: 100%;
+
+        &:not(last-chid) {
+            margin-right: 10px;
+       }
+     }
+     @include scale(612){
+        flex-direction: column;
+        align-items: center;
+
     }
+    
+}
 
-    &__input {
+.section-input{
+
+    &__icon{
+        position: absolute;
+        width: 13px;
+        height: 16px;
+        margin-left: 15px;
+        color: $icon-color;
+        top: 17px;
+
+    }&__input{
         width: 280px;
         height: 50px;
-        margin-right: 10px;
         padding-left: 41px;
         border-radius: 5px;
         border: 1px solid #cbcbcb;
-        
     }
-  
 }
 
-.section-button {
-    padding: 0;
-    background-color: $main-color;
-
-    &__link {
-        padding: 0 53px;
-    }
+.input-button{
+    cursor: pointer;
+    text-transform: uppercase;
+    background: $main-color;
+    border: none;
+    color: white;
+    padding-left: 0;
 }

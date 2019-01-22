@@ -12,6 +12,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include scale(1000){
+        flex-direction: column;
+        
+    }
+
     }
 
     &__logo{
@@ -29,6 +35,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
+    @include scale(1000){
+        flex-direction: column;
+     
+    }
 
     &__item{
         display: inline-flex;
