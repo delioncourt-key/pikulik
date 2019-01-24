@@ -1,4 +1,50 @@
-@import './variables.scss';
+@font-face {
+    font-family: 'GothamPro-Black'; 
+    src: url(./../fonts/GothamPro-Black.woff) format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   @font-face {
+    font-family:'Lato-Bold';
+    src: url(./../fonts/Lato-Bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+ @font-face {
+    font-family:'Lato-Regular';
+    src: url(./../fonts/Lato-Regular.woff)format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   @font-face {
+    font-family:'OpenSans-Regular';
+    src: url(./../fonts/OpenSans-Regular.woff)format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+   
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $open-sans;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include scale(1000){
+        max-width: 600px;
+    }
+}
+
 @import './header.scss';
 @import './section_heading.scss';
 @import './bottom.scss';
@@ -12,53 +58,6 @@
 @import './slaider.scss';
 @import './testimonials.scss';
 @import './about_us.scss';
-
-@font-face {
-    font-family: 'GothamPro-Black'; 
-    src: url(./fonts/GothamPro-Black.woff) format('woff'); 
-    font-weight: normal;
-    font-style: normal;
-   }
-
-   @font-face {
-    font-family:'Lato-Bold';
-    src: url(./fonts/Lato-Bold.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-   }
-
- @font-face {
-    font-family:'Lato-Regular';
-    src: url(./fonts/Lato-Regular.woff)format('woff');
-    font-weight: normal;
-    font-style: normal;
-   }
-
-   @font-face {
-    font-family:'OpenSans-Regular';
-    src: url(./fonts/OpenSans-Regular.woff)format('woff');
-    font-weight: normal;
-    font-style: normal;
-   }
-   
-*{
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $open-sans;
-    margin: 0;
-}
-
-.container {
-max-width: 1170px;
-margin: 0 auto;
-padding: 0 15px;
-
-@include scale(1000){
-    max-width: 600px;
-}
-}
 
 
 
