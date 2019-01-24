@@ -19,18 +19,21 @@
 
 .social-resources {
     $self: &;
+
     display: flex;
     justify-content: center;
     padding-top: 24px;
     color: #709dca;
 
-    &__label:not(last-child) {
-        margin-right: 17px;
-    }
+    &__label {
+        &:not(last-child) {
+            margin-right: 17px;
+        }
 
-    &:hover {
-        #{$self}__site {
-            color: $main-color;
+        &:hover {
+            #{$self}__site {
+                color: $main-color;
+            }
         }
     }
 }
