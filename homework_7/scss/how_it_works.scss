@@ -1,37 +1,36 @@
 @import './variables.scss';
 
 .content-seven-steps {
-padding-top: get_vw_size(155);
-padding-bottom: get_vw_size(150);
-text-align: center; 
+    padding-top: get_vw_size(155);
+    padding-bottom: get_vw_size(150);
+    text-align: center;
 
 }
+
 .seven-colons-wrapper {
-    display: flex; 
-    justify-content: center; 
-    text-align: center; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
     @include scale(1000) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
-   }
+}
 
 
 .seven-colons {
     padding-top: 79px;
     position: relative;
-    
-     @include scale(1000) {
-        padding-top: 0; 
-     }
-    
-    
+
+    @include scale(1000) {
+        padding-top: 0;
+    }
+
     &__icon-colon {
-       margin-top: get_vw_size(25); 
-       padding-bottom:  get_vw_size(102);
+        margin-top: get_vw_size(25);
+        padding-bottom: get_vw_size(102);
     }
 
     &__header-colon {
@@ -49,29 +48,26 @@ text-align: center;
     }
 
 }
-   
- .arrow-bottom {
-        top:100px;
-        position: relative;
 
-        @include scale(1000) { 
-            display: none;
-        }
+.arrow-bottom {
+    top: 100px;
+    position: relative;
 
-     }   
-      
- .arrow-top {
-        position: relative;
-        bottom: 30px;
+    @include scale(1000) {
+        display: none;
+    }
+}
 
-        @include scale(1000) { 
-            display: none;
-        }
- }
+.arrow-top {
+    position: relative;
+    bottom: 30px;
 
- .button-seven-steps {
-     padding-top: 17px;
-     padding-bottom: 19px;
- }
-     
-        
+    @include scale(1000) {
+        display: none;
+    }
+}
+
+.button-seven-steps {
+    padding-top: 17px;
+    padding-bottom: 19px;
+}

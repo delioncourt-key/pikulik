@@ -1,50 +1,49 @@
 @import './variables.scss';
 
-.content-boost-up{
-    background-color: rgb(112, 157, 202); 
+.content-boost-up {
+    background-color: rgb(112, 157, 202);
     padding-top: get_vw_size(110);
     padding-bottom: get_vw_size(347);
 }
 
-.section-input-wrapper{
-     display: flex;
-     align-items: center;
-
-     @include scale(1145){
-         flex-direction: column;
-         align-items: center;
-     }
-
-     &__roll{
-        display: flex;
-        
-     }
-         
-}
- .roll{
+.section-input-wrapper {
+    display: flex;
     align-items: center;
-    
 
-    &__section-input{
+    @include scale(1145) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__roll {
+        display: flex;
+
+    }
+}
+
+.roll {
+    align-items: center;
+
+    &__section-input {
         display: flex;
         position: relative;
         width: 100%;
 
         &:not(last-chid) {
             margin-right: 10px;
-       }
-     }
-     @include scale(612){
+        }
+    }
+
+    @include scale(612) {
         flex-direction: column;
         align-items: center;
 
     }
-    
+
 }
 
-.section-input{
-
-    &__icon{
+.section-input {
+    &__icon {
         position: absolute;
         width: 13px;
         height: 16px;
@@ -52,7 +51,9 @@
         color: $icon-color;
         top: 17px;
 
-    }&__input{
+    }
+
+    &__input {
         width: 280px;
         height: 50px;
         padding-left: 41px;
@@ -61,7 +62,7 @@
     }
 }
 
-.input-button{
+.input-button {
     cursor: pointer;
     text-transform: uppercase;
     background: $main-color;

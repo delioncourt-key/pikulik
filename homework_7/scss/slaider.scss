@@ -9,6 +9,7 @@
         background: url('./../img/Vector_Smart_Object.png') no-repeat;
         background-size: cover;
     }
+
     &__image {
         position: absolute;
         top: get_vw_size(18);
@@ -30,8 +31,9 @@
             position: absolute;
             bottom: get_vw_size(190);
             color: white;
-           font-size: 35px;
+            font-size: 35px;
         }
+
         &_left {
             left: 0;
 
@@ -50,6 +52,7 @@
             }
         }
     }
+
     &__controls {
         max-width: get_vw_size(647);
         padding: get_vw_size(24);
@@ -65,12 +68,12 @@
         border: 2px solid #252525;
         border-radius: 50%;
         margin: 0 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
 
         &_active {
-            border-color:  #1ca8dd;
+            border-color: #1ca8dd;
         }
-}
+    }
 
 }
 

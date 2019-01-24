@@ -1,8 +1,8 @@
 @import './variables.scss';
 
 @font-face {
-    font-family: $gotam; 
-    src: url('./../fonts/GothamPro-Black.woff') format('woff'); 
+    font-family: $gotam;
+    src: url('./../fonts/GothamPro-Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
- @font-face {
+@font-face {
     font-family: $lato-p;
     src: url('./../fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
@@ -27,7 +27,7 @@
     font-weight: normal;
     font-style: normal;
 }
-   
+
 * {
     box-sizing: border-box;
 }
@@ -42,7 +42,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 
-    @include scale(1000){
+    @include scale(1000) {
         max-width: 600px;
     }
 }
@@ -50,7 +50,7 @@ body {
 @import './header.scss';
 @import './section_heading.scss';
 @import './bottom.scss';
-@import './section_boost_up.scss';   
+@import './section_boost_up.scss';
 @import './cards.scss';
 @import './contacts.scss';
 @import './footer.scss';
@@ -60,18 +60,3 @@ body {
 @import './slaider.scss';
 @import './testimonials.scss';
 @import './about_us.scss';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

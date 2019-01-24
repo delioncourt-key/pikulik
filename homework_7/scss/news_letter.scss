@@ -1,19 +1,15 @@
 @import './variables.scss';
 
-.new-letter{
+.new-letter {
     padding-top: get_vw_size(154);
-    }
+}
 
-    .section-input-wrapper{
-        display: flex;
-        justify-content: center;
-       
-       
-
+.section-input-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .location {
-
     background-image: url(../img/maps.png);
     padding-top: get_vw_size(98);
     padding-bottom: get_vw_size(220);
@@ -22,4 +18,3 @@
     align-items: center;
     justify-content: center;
 }
-
