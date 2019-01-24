@@ -1,27 +1,29 @@
+@import './variables.scss';
+
 @font-face {
-    font-family: 'GothamPro-Black'; 
-    src: url(./../fonts/GothamPro-Black.woff) format('woff'); 
+    font-family: $gotam; 
+    src: url('./../fonts/GothamPro-Black.woff') format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family:'Lato-Bold';
-    src: url(./../fonts/Lato-Bold.woff) format('woff');
+    font-family: $lato-b;
+    src: url('./../fonts/Lato-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
  @font-face {
-    font-family:'Lato-Regular';
-    src: url(./../fonts/Lato-Regular.woff) format('woff');
+    font-family: $lato-p;
+    src: url('./../fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family:'OpenSans-Regular';
-    src: url(./../fonts/OpenSans-Regular.woff) format('woff');
+    font-family: $open-sans;
+    src: url('./../fonts/OpenSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

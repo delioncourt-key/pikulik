@@ -1,4 +1,5 @@
 @import './variables.scss';
+
 .section-heading {
     line-height: 1;
     text-align: center;
@@ -15,7 +16,7 @@
     }
   
     &__main {
-      font-family: $Gotam;
+      font-family: $gotam;
       font-size: 35px;
       margin-bottom: 2px;
       letter-spacing: -0.80px;
