@@ -17,7 +17,7 @@
 */
 
 const path_to_main_scss_file =  './styles/style.scss'; // путь до главного scss файла
-const scss_path_to_watch = './styles/**/*.scss'; // наблюдать за изменениями во всех папках в папке 'styles', scss с любым именем файла
+const scss_path_to_watch = './styles/*.scss'; // наблюдать за изменениями во всех папках в папке 'styles', scss с любым именем файла
 const destination_path = 'dist/'; // папка куда положить итоговый css
 const final_css_name = 'style.css'; // имя итоговогой файла
 
