@@ -1,5 +1,4 @@
 @import './variables.scss';
-
 @font-face {
     font-family: $gotam;
     src: url('./../fonts/GothamPro-Black.woff') format('woff');
@@ -41,7 +40,6 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-
     @include scale(1000) {
         max-width: 600px;
     }

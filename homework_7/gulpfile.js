@@ -57,3 +57,55 @@ function build_sass() {
 }
 
 exports.default = sync;
+
+
+const path_to_pug_pages = 'templates/pages/*.pug';
+const pug_path_to_watch = './templates/**/*.pug';
+
+
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const pug = require('gulp-pug');
+const browserSync = require('browser-sync').create();
+const browser_list = ['last 2 versions', 'ie >= 10'];
+
+function sync() {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    });
+
+    gulp.watch(pug_path_to_watch, build_templates);
+    gulp.watch(scss_path_to_watch, build_sass);
+    gulp.watch("./*.html").on('change', browserSync.reload);
+}
+
+function build_sass() {
+    return gulp.src(path_to_main_scss_file) // get scss file from path
+        .pipe(sourcemaps.init()) // init sourcemaps (for resolving from which scss file your css selector was built) http://prntscr.com/m6rj2p
+        .pipe(sass().on('error', sass.logError)) // compile scss to css
+        .pipe(sourcemaps.write()) // write sourcemaps to css files
+        .pipe(concat(final_css_name)) // concatenate all compiled css files to 1 file
+        .pipe(autoprefixer({
+            browsers: browser_list
+        })) // add vendor prefixes
+        .pipe(gulp.dest(destination_path)) // put final css to destination path
+        .pipe(browserSync.stream()); // reload browser
+}
+
+function build_templates() {
+    return gulp.src(path_to_pug_pages)
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./'))
+}
+
+exports.default = gulp.series(
+    gulp.parallel(build_templates, build_sass),
+    sync
+);
