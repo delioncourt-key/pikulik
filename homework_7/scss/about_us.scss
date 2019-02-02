@@ -19,6 +19,7 @@
         padding-bottom: get_vw_size(160);
         margin-left: 50%;
         padding-left: get_vw_size(80);
+        padding-right: get_vw_size(110);
     }
 
     @include scale(800) {
