@@ -3,6 +3,7 @@
 .about-us {
     position: relative;
     background-color: $main-color;
+    padding: 0;
 
     &__image {
         position: absolute;
@@ -14,8 +15,8 @@
     }
 
     &__right {
-        padding-top: get_vw_size(164);
-        padding-bottom: get_vw_size(174);
+        padding-top: get_vw_size(150);
+        padding-bottom: get_vw_size(160);
         margin-left: 50%;
         padding-left: get_vw_size(80);
     }
@@ -43,17 +44,18 @@
     }
 
     &__about-text {
-        line-height: 1.5;
+        line-height: 23px;
+        font-size: 13px;
     }
 }
 
 .link-decorated {
-    padding-top: 17px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .button-about-us {
-    padding-top: 5px;
-    padding-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 1px solid #e7ad48;
 }
