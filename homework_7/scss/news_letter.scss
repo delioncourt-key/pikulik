@@ -9,12 +9,53 @@
     justify-content: center;
 }
 
+.maps-adress {
+    padding: 53px 35px;
+    border-bottom: 2px solid #e3e7ec;
+    margin-bottom: 30px;
+}
+
+
+
 .location {
     background-image: url(../img/maps.png);
     padding-top: get_vw_size(98);
     padding-bottom: get_vw_size(220);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //justify-content: center;
+    &__adress {
+        position: relative;
+   }
+
 }
+
+.info {
+    padding: 0;
+    color: $white;
+    width: 142px;
+    position: absolute;
+    top: 0;
+    margin-top: 65px;
+    margin-left: 69px;
+   
+    &__header-adress {
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: $lato-p;
+        margin-bottom: 10px;
+      font-weight: bold;
+      }
+
+      &__text-adress {
+          font-size: 15px;
+          line-height: 1.5;
+      }
+ }
+
+
+
+
