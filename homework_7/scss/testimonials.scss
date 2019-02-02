@@ -47,23 +47,48 @@
 
     &__avatar {
         position: absolute;
+        margin-right: 20px;
 
-        @include scale(1000) {
+        @include scale(960) {
             position: static;
-            padding-left: get_vw_size(150);
+            padding-left: get_vw_size(160);
         }
     }
 }
 
 .testimonial-paragraph {
-    padding-left: get_vw_size(150);
+    padding-left: get_vw_size(164);
+    position: relative;
 
     &__comment {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.5;
         letter-spacing: -0.75px;
         padding-bottom: 30px;
-    }
+
+        &::before,
+        &::after {
+            font-size: 35px;
+            font-weight: 300px;
+            font-family: none;
+            line-height: 1;
+            position: absolute;
+}
+
+
+        &::before {
+            content: "\201C"; 
+            transform: translate(-100%, -50%);
+       }
+
+
+       &::after {
+         content: "\201E";
+        transform: scale(1, -1);
+        margin-top: 10px;
+        margin-left: 20px;
+     }
+}
 
     &__author {
         color: $main-color;
@@ -72,27 +97,12 @@
         font-size: 14px;
         line-height: 1;
     }
+
+   
 }
 
 .speciality {
     color: #99a9ae;
 }
 
-.top-mark {
-    font-size: 35px;
-    font-weight: 300px;
-    line-height: 1;
-    padding-right: 5px;
-    position: relative;
-    bottom: 3px;
-    font-family: none;
-}
 
-.bottom-mark {
-    position: absolute;
-    transform: scale(1, -1);
-    font-weight: 300px;
-    font-size: 35px;
-    margin-left: 10px;
-    font-family: none;
-}

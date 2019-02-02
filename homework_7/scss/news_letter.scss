@@ -21,13 +21,13 @@
     background-image: url(../img/maps.png);
     padding-top: get_vw_size(98);
     padding-bottom: get_vw_size(220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    //display: flex;
-    //flex-direction: column;
-    //align-items: center;
-    //justify-content: center;
-    &__adress {
-        position: relative;
+      &__adress {
+         position: relative;
    }
 
 }
@@ -35,11 +35,11 @@
 .info {
     padding: 0;
     color: $white;
-    width: 142px;
     position: absolute;
     top: 0;
     margin-top: 65px;
-    margin-left: 69px;
+    margin-left: 60px;
+    text-align: center;
    
     &__header-adress {
         font-size: 20px;
@@ -55,7 +55,10 @@
           line-height: 1.5;
       }
  }
+ 
 
-
+.text-email {
+    color: $main-color;
+}
 
 
