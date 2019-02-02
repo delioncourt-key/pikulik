@@ -22,7 +22,7 @@ $slider_arrows_x_space: 40;
 $slider_arrows_bottom: 190;
 
 @function get_vw_size($size) {
-    $screen: 1311;
+    $screen: 1306;
 
     @return ($size /$screen) *100vw;
 }

@@ -2,7 +2,8 @@
 
 .logo {
     width: 50px;
-    height: 40px;
+    height: 48px;
+    background: url('./../img/Logo.png') no-repeat;
 }
 
 .page-header {
@@ -20,6 +21,7 @@
 
     &__logo {
         margin: 23px 0;
+
     }
 }
 
