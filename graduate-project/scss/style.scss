@@ -1,1 +1,48 @@
 @import './variables.scss';
+
+@font-face {
+    font-family: $title;
+    src: url('./../fonts/libre-baskerville-v5-latin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $poppins;
+    src: url('./../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $logo;
+    src: url('./../fonts/WisdomScriptAJ.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $sacramento;
+    src: url('./../fonts/╨б╨░╨║╤А╨░╨╝╨╡╨╜╤В╨╛.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $poppinsmedium;
+    src: url('./../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import './page-menu.scss';
