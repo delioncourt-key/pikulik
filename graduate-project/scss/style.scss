@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: $poppins;
-    src: url('./../fonts/Poppins-Thin.woff') format('woff');
+    src: url('./../fonts/Poor-Story-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -37,6 +37,10 @@
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: $poppins;
 }
 
 .container {

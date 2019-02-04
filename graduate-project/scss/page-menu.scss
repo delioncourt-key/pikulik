@@ -1,19 +1,70 @@
 @import './variables.scss';
 
+
 .logo {
     font-family: $logo;
     color: #616161;
     font-size: 35px;
     line-height: 1;
     font-weight: bold;
+    text-align: center;
 
      &__active-letter {
      color: #fc5f45;
      }
 }
 
-.page-header {
-    display: flex;
-   
 
+.page-header {
+    background-color: #fff;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include scale(1000) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        margin: 23px 0;
+
+    }
 }
+
+.nav-menu {
+    $self: &;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include scale(340) {
+        flex-direction: column;
+    }
+
+    &__item {
+        display: inline-flex;
+
+        &:hover {
+            #{$self}__link {
+                color: #fc5f45;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 1;
+        padding: 12px 25px;
+        color: $nav-menu-color;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+}
+
+

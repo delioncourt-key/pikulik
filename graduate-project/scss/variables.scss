@@ -3,3 +3,21 @@ $poppins: 'Poppins-Regular';
 $logo: 'wisdom';
 $sacramento:'Sacramento-Regular';
 $poppinsmedium: 'Poppins-Medium';
+$nav-menu-color: #272727;
+
+@mixin scale($width, $diff: 'less') {
+    $behaviour: max-width;
+    $screen-width: $width;
+
+    @if ($diff=='less') {
+        $screen-width: $width - 1px;
+    }
+
+    @if ($diff=='self-above') {
+        $behaviour: min-width;
+    }
+
+    @media screen and (#{$behaviour}: $screen-width) {
+        @content;
+    }
+}
