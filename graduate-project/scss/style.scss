@@ -41,12 +41,14 @@
 
 body {
     font-family: $poppins;
+    margin: 0;
+    line-height: 1;
 }
 
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 @import './page-menu.scss';
+@import './we-design.scss';

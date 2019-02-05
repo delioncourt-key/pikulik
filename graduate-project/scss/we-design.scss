@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+.design-backgraund {
+    background-image: url(../img/black-fone.jpg);
+}
+
+.design-things {
+    padding-top: get_vw_size(175);
+    padding-bottom: get_vw_size(175);
+    text-align: center;
+
+     &__header {
+         font-family: $title;
+         color: $white; 
+         font-size: get_vw_size(60);
+         font-weight: bold;
+         margin-bottom: 49px;
+     }
+
+     &__button {
+      cursor: pointer;
+      padding: 19px 41px;
+      border-radius: 40px;
+      background-color: $button-color;
+      border: none;
+      text-transform: uppercase;
+      color: $white;
+     }
+
+     &__wrapper-svg {
+        display: flex;
+        justify-content: center;
+        padding-top:get_vw_size(80);
+
+        @include scale(500) {
+            flex-direction: column;
+
+        }
+
+     }
+
+}
+
+.design-icon {
+
+    &__wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+       
+            @include scale(500) {
+
+                &:not(first-child) {
+                padding-top: 20px;
+           }
+
+
+        }
+
+    }
+
+    &__icon {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+}
+
+.text{
+
+    &_green {
+        color:#38c695;
+    }
+
+
+    &_purple {
+        color:#b27cf5;
+    }
+
+    &_orange {
+        color:#feb960;
+    }
+}

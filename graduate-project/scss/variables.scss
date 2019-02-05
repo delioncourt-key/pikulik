@@ -4,6 +4,8 @@ $logo: 'wisdom';
 $sacramento:'Sacramento-Regular';
 $poppinsmedium: 'Poppins-Medium';
 $nav-menu-color: #272727;
+$white: #fff;
+$button-color: #fc5f45;
 
 @mixin scale($width, $diff: 'less') {
     $behaviour: max-width;
@@ -21,3 +23,10 @@ $nav-menu-color: #272727;
         @content;
     }
 }
+
+@function get_vw_size($size) {
+    $screen: 1306;
+
+    @return ($size /$screen) *100vw;
+}
+
