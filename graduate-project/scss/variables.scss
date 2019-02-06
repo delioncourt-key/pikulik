@@ -6,6 +6,9 @@ $poppinsmedium: 'Poppins-Medium';
 $nav-menu-color: #272727;
 $white: #fff;
 $button-color: #fc5f45;
+$numbercolors: #e0e0e0;
+$headcolor: #313131; 
+$textcolor: #616161;
 
 @mixin scale($width, $diff: 'less') {
     $behaviour: max-width;
