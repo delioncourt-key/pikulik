@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+.awesomeness {
+    background-image: url(./../img/movi/background_image.png);
+    padding-top: get_vw_size(148);
+    padding-bottom: get_vw_size(151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+
+    &__header {
+        font-size: 31px;
+        font-weight: bold;
+        padding-bottom: 33px;
+    }
+
+    &__icon {
+        padding-bottom: 41px;
+    }
+}   

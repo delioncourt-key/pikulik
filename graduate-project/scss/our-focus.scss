@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+.our-focus {
+background-color: #f7f7f7;
+padding-bottom: get_vw_size(151);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    margin-right: get_vw_size(150);
+    margin-left: get_vw_size(150);
+
+    @include scale(980) {
+        flex-direction: column;
+        align-items: center;
+        margin-right: get_vw_size(350);
+        margin-left: get_vw_size(350);
+    }
+}
+
+.card {
+ padding: 66px 33px;
+ background-color: $white;
+ text-align: center;
+
+ @include scale(980) {
+    margin-top: 20px; 
+  }
+ 
+   &:not(:last-child) {
+       margin-right: 30px;
+
+       @include scale(980) {
+        margin-right:0; 
+        }
+     }
+
+   &__icon {
+       margin-bottom: 32px;
+   }
+
+   &__header {
+       color: $headcolor;
+       font-size: 22px;
+       font-weight: bold;
+       margin-bottom: 32px;
+   }
+
+   &__text {
+     font-size: 15px;
+     color: $textcolor;
+     line-height: 1.5;
+   }
+
+}
+
+
+.card_orange {
+    border-bottom: #feb960  solid 3px;
+}
+
+.card_purple {
+    border-bottom: #b27cf5 solid 3px;
+}
+
+.card_green {
+    border-bottom: #38c695 solid 3px;
+}
+
+.card_red {
+    border-bottom: #fc5f45 solid 3px;
+}
+
