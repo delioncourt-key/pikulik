@@ -1,0 +1,56 @@
+@import './variables.scss';
+
+.image-wrapper {
+   padding-top: 80px;
+    padding-bottom: get_vw_size(149);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.portfolio-image {
+    $self: &;
+    margin: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__hover {
+        text-align: center;
+   }
+
+   &:hover {
+    #{$self}__hover {
+    display: inline;
+    }
+}
+}
+
+.hover {
+   position: absolute;
+    background-color: $white;
+    bottom: 0;
+    display: none;
+
+&__text {
+        color: $headcolor;
+        font-size: 19px;
+        margin-top: 27px;
+        margin-bottom: 23px;
+        }
+
+     &__border {
+         display: flex;
+         justify-content: center;
+     }   
+}
+
+
+.portfolio-border{
+    height: 3px;
+    width: 90px;
+}
+
+
