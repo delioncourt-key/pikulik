@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.our-team{
+    background-color: #f7f7f7; 
+}
+
+.team-cards {
+padding-top: 78px;
+display: flex;
+justify-content: space-between;
+
+@include scale(900) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+}
+
+.team-card {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 22px;
+    margin-bottom: 9px;
+
+    &__autor {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 13px;
+        margin-top: 17px;
+
+    }
+
+    &__position {
+        font-size: 14px;
+    }
+
+}
+
+.autor_red {
+    color: #fc5f45;
+}
+
+.autor_green {
+    color: #38c695;
+}
+
+.autor_purple {
+    color: #b27cf5;
+}
+
+.autor_orange {
+    color: #feb960;
+}
+
+

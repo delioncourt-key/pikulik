@@ -1,11 +1,11 @@
 @import './variables.scss';
 
 .design-backgraund {
-    background-image: url(../img/black-fone.jpg);
+    background: url(../img/black-fone.jpg) no-repeat center center;
 }
 
 .design-things {
-    padding-top: get_vw_size(175);
+    padding-top: 175px;
     padding-bottom: get_vw_size(175);
     text-align: center;
 
