@@ -1,0 +1,98 @@
+@import './variables.scss';
+
+.steps-wrapper {
+    padding-top: get_vw_size(128);
+    padding-bottom: get_vw_size(150);
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+}
+
+.step-text {
+   background-color: $white;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+   padding: 73px 60px 57px 38px;
+   position: absolute;
+   width: 458px;
+   bottom: 70px;
+
+   @include scale(960) {
+    bottom: 0;
+    background: none;
+    margin-left: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+    @include scale(450) {
+        margin-left: 0;
+    }
+
+
+   &__heading {
+       margin-left: 77px;
+       margin-bottom: 24px;
+       font-size: 26px;
+       font-weight: bold;
+       color: $nav-menu-color;
+   }
+
+   &__text {
+    margin-left: 77px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: $textcolor;
+    letter-spacing: 1.3px;
+   }
+}
+   
+.number-line{
+position: relative;
+
+    &__number{
+        font-size: 57px;
+        color: $numbercolors;
+        font-family: $title;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    &__line {
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+}
+
+.step_red {
+    border-bottom: solid 3px $orange;
+}
+
+.step_green {
+    border-bottom: solid 3px $green;
+}
+
+.step_purple {
+    border-bottom: solid 3px $purple;
+}
+
+.step_orange {
+    border-bottom: solid 3px $red;
+}
+
+.left {
+    left: 0;
+    @include scale(960) {
+        right: 0;
+      }
+}
+
+.right {
+    right: 0;
+    @include scale(960) {
+        left: 0;
+      }
+}
