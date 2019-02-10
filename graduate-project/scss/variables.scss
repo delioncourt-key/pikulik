@@ -5,10 +5,14 @@ $sacramento:'Sacramento-Regular';
 $poppinsmedium: 'Poppins-Medium';
 $nav-menu-color: #272727;
 $white: #fff;
-$button-color: #fc5f45;
 $numbercolors: #e0e0e0;
 $headcolor: #313131; 
 $textcolor: #616161;
+$red: #feb960;
+$purple: #b27cf5;
+$green: #38c695;
+$orange: #fc5f45;
+
 
 @mixin scale($width, $diff: 'less') {
     $behaviour: max-width;
