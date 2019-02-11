@@ -1,0 +1,124 @@
+@import './variables.scss';
+
+.pricing-table {
+    background-color: #f7f7f7;
+}
+
+.pricings {
+    padding-top: 77px;
+    padding-bottom: get_vw_size(150);
+    display: flex;
+    justify-content: space-around;
+
+    @include scale(900) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.price {
+    background-color: $white;
+    padding: 38px 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    @include scale(900) {
+       margin-bottom: 30px;
+    }
+   
+
+    &__header {
+        margin-bottom: 32px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+   &__button {
+       cursor: pointer;
+       padding: 19px 37px;
+       border-radius: 25px;
+       text-transform: uppercase;
+     }
+}
+
+.image-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+        margin-bottom: 44px; 
+    }
+
+    &__cost {
+        position: absolute;
+        top: 0;
+        color: $white;
+        font-size: 25px;
+        margin-top: 33px;
+    }
+
+    &__period {
+        font-size: 13px;
+    }
+}
+
+.text-number {
+    color: $textcolor;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+
+    &__string {
+        margin-bottom: 16px;
+
+    }
+
+    &__mark {
+        margin-bottom: 16px;
+
+        &::before {
+            content: "\2714";
+            margin-right: 10px;
+            color: $headcolor;
+        }
+    }
+
+    &__bold {
+        color: $headcolor;
+        font-weight: bold;
+    }
+}
+
+.price_green {
+    border-top: solid 3px $green;
+}
+
+.price_purple {
+    border-top: solid 3px $purple;
+}
+
+.price_red {
+    border-top: solid 3px $orange;
+}
+.button_green {
+    border-color: $green;
+    background-color: $white;
+    color: $green;
+}
+
+.button_purple {
+    border-color: $purple;
+    background-color: $white;
+    color: $purple;
+}
+
+.button_red {
+    background-color:$orange;
+    color: $white;
+    border: none;
+}
