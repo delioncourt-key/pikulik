@@ -1,0 +1,124 @@
+@import './variables.scss';
+
+.testimonials {
+    background: url(./../img/testimonial/background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+.main_light {
+    color: $white;
+ }
+
+.number_light {
+    color: #2b2b2c;  
+}
+
+
+.testimonial {
+    padding-top: 79px;
+    padding-bottom: get_vw_size(152); 
+    display: flex; 
+    position: relative;
+
+    @include scale(980) {
+        justify-content: center;}
+
+
+    &__content {
+        position: relative;
+
+        @include scale(500) {
+         position: absolute;
+         top:0;
+        }
+ }
+
+}
+
+
+
+.testimonial-text {
+    background-color: white;
+    padding: 41px 75px 39px 55px;
+    position: relative;
+    top: 40px;
+    border-bottom: solid 3px $orange;
+
+    @include scale(900) {
+        padding-top: 40px;
+       }
+
+    @include scale(500) {
+        background: none;
+        border: none;
+    }
+
+   &__text {
+        font-size: 17px;
+        color: $textcolor;
+        line-height: 1.5;
+        margin-bottom: 38px;
+    }
+
+    &__signature {
+        font-family: $sacramento;
+        color: $nav-menu-color;
+        font-size: 31px;
+        padding-bottom: 24px;
+    }
+
+    &__autor {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 13px;
+    }
+
+    &__job {
+        font-size: 13px;
+        color: $orange;
+    }
+}
+
+.radio {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 45px;
+
+    @include scale(980) {
+        justify-content: center;
+    }
+
+     &__radio {
+       height: 15px;
+       width: 15px;
+       border: solid 1px $white;
+       border-radius: 50%;
+       
+       &:not(:last-child) {
+           margin-right: 5px;
+       }
+    
+    }
+}
+
+.active {
+    border-color: $orange;
+    position: relative;
+
+    &__radio-smoll {
+        height: 9px;
+        width: 9px;
+        border: solid 1px $orange;
+        background-color: $orange;
+        border-radius: 50%;
+        position: absolute;
+        left: 2px;
+        top: 1.5px;
+    }
+}
+
+
+ 
+
