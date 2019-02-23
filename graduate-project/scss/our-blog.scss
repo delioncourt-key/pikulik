@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+.our-blog {
+    background-color: #f7f7f7;
+}
+
+.our-blog-wrapper {
+    padding-top: 77px;
+    padding-bottom: get_vw_size(151);
+    display: flex;
+    justify-content: space-around;
+
+    @include scale(900) {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+.left-colon{
+    margin-left: 30px;
+
+   }
+
+
+
+.blog {
+    background-color: $white;
+    padding: 31px 51px 45px;
+    color: $textcolor;
+    position: relative;
+    
+   &:not(:last-child) {
+        margin-bottom: 23px;
+    }
+
+    &__wrapper {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__autor {
+      text-transform: uppercase;
+      margin-right: 25px;
+      font-size: 15px;
+
+    }
+
+    &__date {
+        font-size: 12px;
+    }
+
+    &__header {
+        font-size: 16px;
+        color: $nav-menu-color;
+        margin-bottom: 21px;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 1.2px;
+    }
+    }
+
+    .header-facebook {
+        font-size: 21px;
+        line-height: 1.5;
+        padding: 11px 0;
+    }
+
+    .wrapper-blog {
+       position: absolute;
+       top:-50px;
+    }
+
+    .blog-date {
+        color: $white;
+        opacity: 0.5;
+    }
+
+    .link_black {
+        color: $nav-menu-color;
+        font-weight: bold;
+    }
