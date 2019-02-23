@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+.subscribe {
+    text-align: center;
+    padding-top: get_vw_size(149);
+    padding-bottom: get_vw_size(150);
+
+    &__header {
+        font-size: 27px;
+        color:$nav-menu-color;
+        margin-bottom: 53px;
+    }
+
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.subscribe-form {
+
+    &__email,
+    &__button {
+        padding: 17px 23px; 
+     }
+
+    &__email {
+       border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border: solid 2px #efefef;
+        border-right: none;
+     }
+
+     &__button {
+         background-color: $orange;
+         border: none;
+         border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        text-transform: uppercase;
+        color: $white;
+        cursor: pointer;
+
+     }
+}
