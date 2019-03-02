@@ -1,18 +1,27 @@
+//fonts;
 $title: 'LibreBaskerville-Bold';
 $poppins: 'Poppins-Regular';
 $logo: 'wisdom';
 $sacramento:'Sacramento-Regular';
 $poppinsmedium: 'Poppins-Medium';
+
+//colors-fonts;
 $nav-menu-color: #272727;
 $white: #fff;
 $numbercolors: #e0e0e0;
 $headcolor: #313131; 
 $textcolor: #616161;
+
+//colors-backgraund;
 $red: #feb960;
 $purple: #b27cf5;
 $green: #38c695;
 $orange: #fc5f45;
 $fonecolors:#f7f7f7;
+$blackfonecolors: #3f4049;
+
+//mixins
+
 
 
 @mixin scale($width, $diff: 'less') {

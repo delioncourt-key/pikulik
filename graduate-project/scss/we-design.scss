@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 .design-backgraund {
-    background: url(../img/black-fone.jpg) no-repeat center center;
+    background: $blackfonecolors;
 }
 
 .design-things {
@@ -13,8 +13,9 @@
          font-family: $title;
          color: $white; 
          font-size: get_vw_size(60);
-         font-weight: bold;
+         font-weight: 400px;
          margin-bottom: 49px;
+         line-height: 0.3;
      }
 
      &__button {
