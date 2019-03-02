@@ -34,3 +34,34 @@ align-items: center;
 }
 
 
+
+//color border and text
+.borderred {
+    border: solid 3px $red;
+}
+
+.bordergreen {
+    border: solid 3px $green;
+}
+
+
+.borderpurple {
+    border: solid 3px $purple;
+}
+
+.borderorange {
+    border: solid 3px $orange;
+}
+
+.textred {
+ color: $red;
+}
+.textgreen {
+    color: $green;
+}
+.textpurple {
+    color: $purple;
+}
+.texorange {
+    color: $orange;
+}

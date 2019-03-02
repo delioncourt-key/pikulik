@@ -2,8 +2,13 @@
 
 .about-section {
     padding: 149px 100px 151px 100px;
-    
-    @include scale(980) {
+
+    @include scale(500) {
+        padding: 30px; 
+
+   }
+
+    @include scale(500) {
         padding: 0; 
 
    }
@@ -16,7 +21,12 @@
     justify-content: center;
     max-width: 50%;
 
-    @include scale(980) {
+    @include scale(900) {
+        max-width: 100%;
+        
+      }
+
+    @include scale(500) {
       max-width: 100%;
       
     }
@@ -33,7 +43,13 @@
         width: get_vw_size(500);
         transform: translate(90%, 30%);
 
-        @include scale(980) {
+        @include scale(900) {
+            background: none;
+            position: static;
+
+       }
+
+        @include scale(500) {
             background: none;
             transform: translate(0, 0);
 
@@ -59,7 +75,7 @@
         color: $headcolor;
         padding: 94px 83px 0 83px;
 
-        @include scale(980) {
+        @include scale(900) {
             padding: 94px 0 0 0;
         }
      }
@@ -70,7 +86,7 @@
             padding-bottom: get_vw_size(151);
             padding: 0 83px 106px 83px;
 
-            @include scale(980) {
+            @include scale(500) {
                 padding: 0;
             }
         }
@@ -92,18 +108,3 @@
     margin: 0;
 }
 
-.border_red {
- background-color: $orange;
-}
-
-.border_green {
-    background-color: $green;
-}
-
-.border_purple {
-    background-color: $purple;
-}
-
-.border_orange {
-    background-color: $red;
-}
