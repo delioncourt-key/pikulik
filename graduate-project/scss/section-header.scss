@@ -40,8 +40,15 @@ align-items: center;
     border: solid 3px $red;
 }
 
+.borderredbottom {
+    border-bottom: solid 3px $red;
+}
+
 .bordergreen {
     border: solid 3px $green;
+}
+.bordergreenbotton {
+    border-bottom: solid 3px $green;
 }
 
 
@@ -49,8 +56,16 @@ align-items: center;
     border: solid 3px $purple;
 }
 
+.borderpurplebottom {
+    border-bottom: solid 3px $purple;
+}
+
 .borderorange {
     border: solid 3px $orange;
+}
+
+.borderorangebottom {
+    border-bottom: solid 3px $orange;
 }
 
 .textred {

@@ -1,8 +1,8 @@
 @import './variables.scss';
 
 .our-focus {
-background-color: #f7f7f7;
-padding-bottom: get_vw_size(151);
+background-color: $fonecolors;
+padding-bottom: $sectionpadingbottom;
 }
 
 .cards {
@@ -54,22 +54,5 @@ padding-bottom: get_vw_size(151);
      line-height: 1.5;
    }
 
-}
-
-
-.card_orange {
-    border-bottom: $red  solid 3px;
-}
-
-.card_purple {
-    border-bottom: $purple solid 3px;
-}
-
-.card_green {
-    border-bottom: $green solid 3px;
-}
-
-.card_red {
-    border-bottom: $orange solid 3px;
 }
 
