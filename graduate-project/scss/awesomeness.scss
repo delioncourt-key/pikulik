@@ -2,8 +2,8 @@
 
 .awesomeness {
     background: url(./../img/movi/background_image.png) no-repeat center center;
-    padding-top: get_vw_size(148);
-    padding-bottom: get_vw_size(151);
+    padding-top: $sectionpaddingtop;
+    padding-bottom: $sectionpadingbottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
