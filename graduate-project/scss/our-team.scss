@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 .our-team{
-    background-color: #f7f7f7; 
+    background-color: $fonecolors; 
 }
 
 .team-cards {
@@ -39,20 +39,5 @@ justify-content: space-between;
 
 }
 
-.autor_red {
-    color: $orange;
-}
-
-.autor_green {
-    color: $green;
-}
-
-.autor_purple {
-    color: $purple;
-}
-
-.autor_orange {
-    color: $red;
-}
 
 
