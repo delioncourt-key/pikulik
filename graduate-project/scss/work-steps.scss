@@ -4,11 +4,22 @@
     padding-top: get_vw_size(128);
     padding-bottom: get_vw_size(150);
 
-    &__content {
+     &__content {
         display: flex;
         justify-content: center;
         position: relative;
+
     }
+
+     &__image,
+     &__content {
+
+        @include scale(600) {
+       width: get_vw_size(200);
+     }
+    }
+
+
 
 }
 
@@ -20,14 +31,22 @@
    width: 458px;
    bottom: 70px;
 
+   @include scale(600) {
+    padding: 10px;
+    width: 320px;
+   }
+
    @include scale(960) {
     bottom: 0;
     background: none;
     margin-left: 10%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     }
+
+   
     @include scale(450) {
         margin-left: 0;
+
     }
 
 
@@ -45,14 +64,22 @@
     line-height: 1.5;
     color: $textcolor;
     letter-spacing: 1.3px;
+
+    @include scale(600) {
+        margin-left: 10px;
+       }
    }
 }
    
 .number-line{
 position: relative;
 
+@include scale(600) {
+    position: absolute;
+  }
+
     &__number{
-        font-size: 57px;
+        font-size: get_vw_size(57);
         color: $numbercolors;
         font-family: $title;
         text-transform: uppercase;
@@ -65,22 +92,6 @@ position: relative;
         top: 0;
         left: -20px;
     }
-}
-
-.step_red {
-    border-bottom: solid 3px $orange;
-}
-
-.step_green {
-    border-bottom: solid 3px $green;
-}
-
-.step_purple {
-    border-bottom: solid 3px $purple;
-}
-
-.step_orange {
-    border-bottom: solid 3px $red;
 }
 
 .left {
