@@ -40,19 +40,32 @@
 
 .testimonial-text {
     background-color: white;
-    padding: 41px 75px 39px 55px;
+    padding: 0px 75px 39px 55px;
     position: relative;
-    top: 40px;
+    top: 25px;
     border-bottom: solid 3px $orange;
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        font-family: $title;
+        font-size: get_vw_size(338);
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        color: $numbercolors
+}
 
     @include scale(900) {
         padding-top: 40px;
+        top: 7px;
        }
 
     @include scale(500) {
         padding: 10px;
         background: none;
         border: none;
+        top: 50px;
      }
 
    &__text {
@@ -60,6 +73,13 @@
         color: $textcolor;
         line-height: 1.5;
         margin-bottom: 38px;
+        padding-top: 40px;
+
+        @include scale(500) {
+            margin-bottom: 25px;
+           }
+       
+        
     }
 
     &__signature {
@@ -77,6 +97,10 @@
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 13px;
+
+        @include scale(500) {
+            margin-bottom: 5px;
+            }
     }
 
     &__job {
@@ -100,6 +124,10 @@
        width: 15px;
        border: solid 1px $white;
        border-radius: 50%;
+
+       @include scale(500) {
+        margin-top: 15px;
+        }
        
        &:not(:last-child) {
            margin-right: 5px;

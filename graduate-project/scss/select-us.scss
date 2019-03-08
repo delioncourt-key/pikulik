@@ -11,6 +11,7 @@ padding-bottom: get_vw_size(165);
     padding-top: 78px;
     padding-bottom: get_vw_size(150);
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     @include scale(1140) {
@@ -20,15 +21,13 @@ padding-bottom: get_vw_size(165);
 
   &__wrapper {
         width: 280px;
-
-
-        &:not(:last-child) {
-            margin-right: 80px;
+            margin-right: 40px;
+            margin-left: 40px;
             margin-bottom: 73px;
         }
 
     }
-}
+
 
 
 .select-content {
