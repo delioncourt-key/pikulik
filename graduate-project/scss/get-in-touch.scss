@@ -3,49 +3,49 @@
 .get {
     background-color: #cccccc;
     padding-bottom: get_vw_size(126);
-   
+
 }
 
 .get-form {
-   padding-top: 78px;
-   padding-bottom: get_vw_size(149);
-   display: flex;
-   flex-direction: column;
+    padding-top: 78px;
+    padding-bottom: get_vw_size(149);
+    display: flex;
+    flex-direction: column;
 
-   &__wrapper-input {
-       margin-bottom: 25px;
+    &__wrapper-input {
+        margin-bottom: 25px;
 
-       @include scale(600) { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 0;
-       }
-      
-   }
+        @include scale(600) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+        }
 
-   &__text {
-       text-align: center;
-       padding: 20px 0;
-       width: get_vw_size(360);
-       border: none;
-       border-radius: 3px;
+    }
 
-       &:not(:last-child) {
-           margin-right: 30px;
+    &__text {
+        text-align: center;
+        padding: 20px 0;
+        width: get_vw_size(360);
+        border: none;
+        border-radius: 3px;
 
-           @include scale(600) { 
-            margin-right: 0;
-            
-           }
-       }
+        &:not(:last-child) {
+            margin-right: 30px;
 
-       @include scale(600) { 
-        margin-bottom: 10px;
-        padding: 10px 0;
-        
-       }
-   }
+            @include scale(600) {
+                margin-right: 0;
+
+            }
+        }
+
+        @include scale(600) {
+            margin-bottom: 10px;
+            padding: 10px 0;
+
+        }
+    }
 
     &__comment {
         padding-top: 20px;
@@ -62,10 +62,10 @@
 }
 
 .get-button {
-    padding:  19px 34px;
+    padding: 19px 34px;
     cursor: pointer;
     background-color: $red;
-    text-transform:  uppercase;
+    text-transform: uppercase;
     color: $white;
     border: none;
     border-radius: 25px;
@@ -76,16 +76,16 @@
     display: flex;
 
 
-    @include scale(600) { 
+    @include scale(600) {
         flex-wrap: wrap;
-        
+
     }
 
 
     &__content {
         padding: 60px;
 
-        @include scale(600) { 
+        @include scale(600) {
             padding: 20px;
         }
     }
@@ -93,9 +93,16 @@
     &__header {
         margin-bottom: 37px;
     }
-   
+
     &__text {
         color: $white;
+    }
+
+    &__icon {
+
+        &:not(last-child) {
+            margin-right: 5px;
+        }
     }
 
 }
